@@ -1,7 +1,7 @@
 {
 	"name": "react-paginated-table",
 	"version": "1.0.0",
-	"description": "A react component used to display various data in an HTML table element, with functionality to filter, sort and reorder data.",
+	"description": "A react component used to display various data in an HTML table element, with functionality to paginate, filter and sort and data.",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
 	"types": "dist/types.d.ts",
@@ -40,5 +40,13 @@
 		"typescript": "^5.4.3",
 		"typescript-eslint": "^7.4.0"
 	},
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MisterFried/react-paginated-table.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MisterFried/react-paginated-table.git/issues"
+	},
+	"homepage": "https://github.com/MisterFried/react-paginated-table.git#readme"
 }

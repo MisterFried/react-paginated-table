@@ -25,7 +25,7 @@ export default function PaginatedTable({
 	items,
 	action = { title: undefined, function: undefined, label: undefined },
 	headers,
-	paginateOptions = [5, 10, 15, 20],
+	paginateOptions = [5, 10, 15],
 }: PaginatedTableProps) {
 	const [totalItems, setTotalItems] = useState(items); // All items
 	const [filteredItems, setFilteredItems] = useState(totalItems); // Items after filtering
