@@ -1,22 +1,22 @@
 # react-paginated-table
 
-react-paginated-Table is a npm package based on react made to integrate paginated, filtered, and sortable tables into your web applications. It is build using react, typescript and tailwindcss.
+react-paginated-table is a npm package based on react made to integrate paginated, filtered, and sortable tables into your web applications. It is build using react, typescript and tailwindcss.
 
 ## Installation
 
-Install the package using npm
+Install the package using npm.
 
 ```bash
   npm install react-paginated-table
 ```
 
-Add the table component in your project
+Add the table component in your project.
 
 ```javascript
 import PaginatedTable from "react-paginated-table";
 ```
 
-Use it like a standard react component
+Use it like a standard react component.
 
 ```javascript
 <PaginatedTable
@@ -34,26 +34,26 @@ Use it like a standard react component
 
 The _PaginatedTable_ component can take up to 5 arguments :
 
--   **title**: a string displayed on top of the table
+-   **title**: A string displayed on top of the table.
 
 -   **items**: An array of object with the items to display. Each object must have at least an id property (string), the rest of the properties must be of type string or number.
 
 -   **headers**: An array of object defining the displayed column. Each object must be composed of two properties :
 
-    -   **title**: The title for the column header
-    -   **sortText**: The associated property name in the item object (used for sorting and filtering)
+    -   **title**: The title for the column header.
+    -   **sortText**: The associated property name in the item object (used for sorting and filtering).
 
 -   **action** (Optional): An object defining the action column, can be omitted if no action column is wanted. Must contains the following properties :
 
-    -   **title**: The title for the action column header
+    -   **title**: The title for the action column header.
     -   **function**: The function to be executed when pressing the action button. The id of the corresponding item is given as parameter.
-    -   **label**: The label on the action buttons
+    -   **label**: The label on the action buttons.
 
--   **paginateOptions** (Optional): an array of number defining the different options for the number of items to be displayed per page. If omitted, a default value of [5, 10, 15] is set (_Note: for more clarity, any value higher than the total amount of items will not be displayed. If no value remains, the corresponding input will not be displayed at all_)
+-   **paginateOptions** (Optional): An array of number defining the different options for the number of items to be displayed per page. If omitted, a default value of [5, 10, 15] is set. (_Note: for more clarity, any value higher than the total amount of items will not be displayed. If no value remains, the corresponding input will not be displayed at all_).
 
 ### Functionality
 
--   Items can be sorted based on any of the provided header field, in a descending or ascending order. _By default, items are going to be ordered in ascending order for the first provided header field_
+-   Items can be sorted based on any of the provided header field, in a descending or ascending order. _By default, items are going to be ordered in ascending order for the first provided header field_.
 
 -   Items can be filtered based on a text input. The search is performed on every field of the item.
 
@@ -118,6 +118,7 @@ const items = [
 ];
 ```
 
+
 2. **headers**
 
 ```javascript
@@ -145,6 +146,7 @@ const headers = [
 ];
 ```
 
+
 3. **action**
 
 ```javascript
@@ -156,6 +158,7 @@ const action = {
 	label: "Log ID",
 }
 ```
+
 
 4. **Component**
 
@@ -169,11 +172,11 @@ const action = {
 />
 ```
 
+
 5. **Result**
 
-    Desktop
-
-    ![react-paginated-table](/docs/react-paginated-table.PNG?raw=true)
+Desktop
+![react-paginated-table](/docs/react-paginated-table.PNG?raw=true)
 
 Mobile (_table is scrollable if necessary_)
 ![react-paginated-table mobile](/docs/react-paginated-table-mobile.PNG?raw=true)
