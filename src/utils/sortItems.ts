@@ -34,6 +34,7 @@ export default function sortEmployees(
 					return 1;
 				return 0;
 			}
+			return 0;
 		});
 	} else if (order === "desc") {
 		itemList.sort((a, b) => {
@@ -57,6 +58,7 @@ export default function sortEmployees(
 					return -1;
 				return 0;
 			}
+			return 0;
 		});
 	}
 
